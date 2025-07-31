@@ -1,6 +1,6 @@
 {
   "name": "@kuzeytech/my-component-app",
-  "version": "0.0.10",
+  "version": "0.0.14",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
