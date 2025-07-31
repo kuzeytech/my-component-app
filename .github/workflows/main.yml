@@ -21,6 +21,10 @@ jobs:
 
       - run: npm run build && cp package.json ./dist/my-component-app/browser
       
+      - run: npm whoami
+        env:
+        NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+        
       - run: npm publish dist/my-component-app/browser
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
