@@ -23,7 +23,7 @@ jobs:
       
       - run: npm whoami
         env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - run: npm publish dist/my-component-app/browser
         env:
