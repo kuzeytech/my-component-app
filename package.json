@@ -1,6 +1,6 @@
 {
   "name": "@kuzeytech/my-component-app",
-  "version": "0.0.14",
+  "version": "0.0.16",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
@@ -11,7 +11,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "pack": "ng build && cp package.json ./dist/my-component-app/browser && cd ./dist/my-component-app/browser && npm pack",
-    "publish": "ng build -c production && cp package.json ./dist/my-component-app/browser && sleep 10 && npm publish ./dist/my-component-app/browser"
+    "qpublish": "ng build -c production && cp package.json ./dist/my-component-app/browser && sleep 10 && npm publish ./dist/my-component-app/browser"
   },
   "dependencies": {
     "@angular/common": "^20.0.0",
