@@ -1,6 +1,6 @@
 {
   "name": "@kuzeytech/my-component-app",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "repository": "git@github.com:kuzeytech/my-component-app.git",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -12,7 +12,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "pack": "ng build && cp package.json ./dist/my-component-app/browser && cd ./dist/my-component-app/browser && npm pack",
-    "qpublish": "ng build -c production && cp package.json ./dist/my-component-app/browser && sleep 10 && npm publish ./dist/my-component-app/browser"
+    "prepublish": "ng build -c production && cp package.json ./dist/my-component-app/browser"
   },
   "dependencies": {
     "@angular/common": "^20.0.0",
